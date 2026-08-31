@@ -75,6 +75,9 @@ if (libsignalClientPath is String) {
 // Main app
 include(":app")
 
+// Baseline profile generator
+include(":baseline-profile")
+
 // Core modules
 include(":core:util")
 include(":core:util-jvm")
