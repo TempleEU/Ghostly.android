@@ -51,7 +51,6 @@ dependencyResolutionManagement {
     mavenCentral()
   }
   versionCatalogs {
-    // libs.versions.toml is automatically registered.
     create("testLibs") {
       from(files("gradle/test-libs.versions.toml"))
     }
@@ -120,4 +119,4 @@ include(":feature:media-send")
 include(":lintchecks")
 include(":fast-lint")
 
-rootProject.name = "Molly"
+rootProject.name = "Ghostly"
