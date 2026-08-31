@@ -51,6 +51,17 @@ dependencyResolutionManagement {
     mavenCentral()
   }
   versionCatalogs {
+    // Keep the default libs catalog from gradle/libs.versions.toml and restore
+    // the dependency aliases lost during the baseline-profile merge.
+    named("libs") {
+      library("dnsjava", "dnsjava", "dnsjava").version("3.6.4")
+      library("kotlinx-collections-immutable", "org.jetbrains.kotlinx", "kotlinx-collections-immutable").version("0.4.0")
+      library("arrow-core", "io.arrow-kt", "arrow-core").version("2.2.2.1")
+      library("androidx-media3-exoplayer", "androidx.media3", "media3-exoplayer").version("1.9.1")
+      library("androidx-media3-session", "androidx.media3", "media3-session").version("1.9.1")
+      library("androidx-media3-ui", "androidx.media3", "media3-ui").version("1.9.1")
+      bundle("media3", listOf("androidx-media3-exoplayer", "androidx-media3-session", "androidx-media3-ui"))
+    }
     create("testLibs") {
       from(files("gradle/test-libs.versions.toml"))
     }
