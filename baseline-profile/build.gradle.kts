@@ -30,7 +30,7 @@ android {
     }
   }
 
-  targetProjectPath = ":Signal-Android"
+  targetProjectPath = ":app"
 
   flavorDimensions += listOf("distribution", "environment")
   productFlavors {
