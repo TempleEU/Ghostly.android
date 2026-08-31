@@ -34,7 +34,7 @@ android {
 
   flavorDimensions += listOf("distribution", "environment")
   productFlavors {
-    create("play") { dimension = "distribution" }
+    create("website") { dimension = "distribution" }
     create("prod") { dimension = "environment" }
   }
 
@@ -72,7 +72,7 @@ dependencies {
 
 androidComponents {
   beforeVariants(selector().all()) {
-    if (it.flavorName != "playProd" && it.buildType != "mocked") {
+    if (it.flavorName != "websiteProd" && it.buildType != "mocked") {
       it.enable = false
     }
   }
