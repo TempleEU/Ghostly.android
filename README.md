@@ -1,103 +1,161 @@
 👻 Ghostly
 
-Privacy-focused and security-hardened Signal fork for Android.
+A privacy-focused and security-hardened fork of Signal for Android.
 
-Ghostly builds on the Signal/Molly technology stack and provides secure end-to-end encrypted messaging with additional privacy, security and customization features.
+Ghostly builds on the Signal/Molly technology stack, providing secure end-to-end encrypted messaging with additional privacy, security and customization features.
 
-«🔐 Private by design. Secure by default.»
-
----
-
-✨ Features
-
-Ghostly includes the functionality of Signal/Molly together with additional privacy-focused features:
-
-- 🔐 End-to-end encryption — Secure private messaging
-- 📞 Voice & video calls — Encrypted communication
-- 👥 Group conversations — Private group messaging
-- 📎 Encrypted attachments — Photos, videos and files
-- ⏳ Disappearing messages — Automatically remove messages
-- 🔒 App protection — Additional privacy and security controls
-- 🔔 Private notifications — Reduce sensitive information on the lock screen
-- 🛡️ Privacy controls — Additional controls for sensitive data
-- 📱 Multi-device support — Connect supported devices
-- 🚫 Blocking & reporting — Control unwanted communication
-- 💾 Secure local storage — Protect sensitive application data
-- 🎨 Ghostly customization — Independent branding and UI configuration
+«🔐 Private by design · Secure by default · Open source»
 
 ---
 
-🛡️ Privacy & Security
+📖 Introduction
 
-Ghostly uses established cryptographic protocols and libraries from the Signal ecosystem rather than implementing custom cryptography.
+Ghostly is an independent Android messaging application focused on privacy, security and user control.
 
-Additional Ghostly features are designed to improve privacy, reduce information exposure and give users greater control over sensitive data.
+The project builds on the proven Signal/Molly architecture while maintaining its own Ghostly branding, configuration and privacy enhancements.
 
----
-
-🔗 Signal / Molly Compatibility
-
-Ghostly is built around the Signal/Molly messaging architecture.
-
-Where supported by the underlying implementation, Ghostly is designed to maintain compatibility with the Signal ecosystem and its messaging infrastructure.
-
-- "Signal" (https://reference-url-citation.invalid/1)
-- "Molly" (https://reference-url-citation.invalid/2)
-- "Signal Android" (https://reference-url-citation.invalid/3)
+Ghostly aims to incorporate upstream messaging functionality and security improvements while preserving its privacy-focused features.
 
 ---
 
 📥 Download
 
-Releases and build artifacts are available from:
+Download the latest Ghostly releases from GitHub:
 
-- "GitHub Releases" (https://reference-url-citation.invalid/4)
+"⬇️ GitHub Releases" (https://github.com/TempleEU/Ghostly.android/releases)
 
-«⚠️ Always verify release signatures and checksums before installing software from unofficial sources.»
+Source code:
 
----
+"💻 Ghostly Android" (https://github.com/TempleEU/Ghostly.android)
 
-🧪 Development
-
-Ghostly is an Android-first open-source project focused on:
-
-🔐 Security · 🕵️ Privacy · ⚡ Performance · 🧩 Reliability · 📱 Android
-
-The project aims to keep the underlying Signal/Molly functionality up to date while preserving Ghostly-specific privacy, branding and configuration.
+«⚠️ Always verify release signatures and checksums before installing APKs from third-party sources.»
 
 ---
 
-🏗️ Reproducible Builds
+✨ Features
+
+Ghostly includes Signal/Molly functionality together with Ghostly-specific privacy and security features.
+
+- 🔐 End-to-end encryption
+- 💬 Private messaging
+- 👥 Group conversations
+- 📞 Encrypted voice & video calls
+- 📎 Encrypted media & file attachments
+- ⏳ Disappearing messages
+- ❤️ Message reactions & replies
+- 📱 Multi-device support
+- 🔒 Secure local storage
+- 🔔 Privacy-focused notifications
+- 🛡️ Additional privacy & security controls
+- 🚫 Blocking & reporting
+- 🎨 Ghostly branding & customization
+
+---
+
+🛡️ Privacy & Security
+
+Ghostly relies on established cryptographic protocols and libraries from the Signal ecosystem rather than implementing custom cryptography.
+
+The project focuses on:
+
+- 🔐 Strong end-to-end encryption
+- 🛡️ Protection of sensitive local data
+- 🔒 Secure application access
+- 🔔 Reduced notification exposure
+- 🕵️ Privacy-focused configuration
+- 🧩 Maintaining compatibility with the Signal/Molly architecture
+
+Cryptography should be implemented using established and reviewed libraries, never custom algorithms.
+
+---
+
+🔗 Compatibility
+
+Ghostly is based on the Signal/Molly messaging architecture.
+
+Where supported by the underlying implementation, Ghostly is designed to maintain compatibility with the Signal ecosystem.
+
+Upstream projects:
+
+- "🔐 Signal Android" (https://github.com/signalapp/Signal-Android)
+- "🛡️ Molly Android" (https://github.com/mollyim/mollyim-android)
+- "👻 Ghostly Android" (https://github.com/TempleEU/Ghostly.android)
+
+---
+
+💾 Backups
+
+Backup functionality depends on the underlying Signal/Molly implementation and the specific Ghostly release.
+
+Before restoring or migrating a backup:
+
+1. 📦 Make sure you are using a compatible Ghostly version.
+2. 🔐 Keep your backup passphrase/recovery information secure.
+3. 💾 Maintain an additional backup before migration.
+4. ⚠️ Never share backup files or encryption keys publicly.
+
+---
+
+🆓 Free & Open Source
+
+Ghostly is developed as an open-source project.
+
+The repository is independently maintained and incorporates open-source work from the Signal and Molly projects.
+
+- "📂 Source Code" (https://github.com/TempleEU/Ghostly.android)
+- "📜 License" (https://github.com/TempleEU/Ghostly.android/blob/main/LICENSE)
+- "⚖️ Legal Information" (https://github.com/TempleEU/Ghostly.android/blob/main/LEGAL.md)
+
+---
+
+🧪 Reproducible Builds
 
 Ghostly aims to support reproducible and independently verifiable builds.
 
 Build documentation:
 
-- "Building Ghostly" (https://reference-url-citation.invalid/5)
-- "Reproducible Builds" (https://reference-url-citation.invalid/6)
+"🏗️ Build Instructions" (https://github.com/TempleEU/Ghostly.android/blob/main/BUILDING.md)
+
+Reproducible build resources:
+
+"🔬 Reproducible Builds" (https://github.com/TempleEU/Ghostly.android/tree/main/reproducible-builds)
+
+The goal is to allow users and developers to independently verify the build process and resulting application artifacts.
 
 ---
 
-🐛 Feedback & Contributions
+🐛 Feedback
 
-Found a bug or have an idea?
+Found a problem or have an idea?
 
-- 🐞 "Report an issue" (https://reference-url-citation.invalid/7)
-- 🔀 "Submit a pull request" (https://reference-url-citation.invalid/8)
-- 💬 Discussions and development happen through GitHub
+- 🐞 "Report a bug" (https://github.com/TempleEU/Ghostly.android/issues/new/choose)
+- 💡 "Request a feature" (https://github.com/TempleEU/Ghostly.android/issues/new/choose)
+- 🔀 "Open Pull Requests" (https://github.com/TempleEU/Ghostly.android/pulls)
+- 📋 "View Issues" (https://github.com/TempleEU/Ghostly.android/issues)
+- ⭐ "Star Ghostly" (https://github.com/TempleEU/Ghostly.android)
 
-Contributions are welcome.
+Contributions and security-focused improvements are welcome.
+
+---
+
+🔄 Changelog
+
+See the repository history and releases for changes:
+
+- "📦 Releases" (https://github.com/TempleEU/Ghostly.android/releases)
+- "📝 Commit History" (https://github.com/TempleEU/Ghostly.android/commits/main)
 
 ---
 
 📜 License
 
-Ghostly follows the applicable licenses of the upstream Signal/Molly code and its individual components.
+Ghostly follows the applicable licenses of the upstream Signal/Molly source code and its individual components.
 
 See:
 
-- "LICENSE" (https://reference-url-citation.invalid/9)
-- "LEGAL.md" (https://reference-url-citation.invalid/10)
+- "📜 LICENSE" (https://github.com/TempleEU/Ghostly.android/blob/main/LICENSE)
+- "⚖️ LEGAL.md" (https://github.com/TempleEU/Ghostly.android/blob/main/LEGAL.md)
+- "📋 NOTICE" (https://github.com/TempleEU/Ghostly.android/blob/main/NOTICE)
 
 ---
 
@@ -105,13 +163,25 @@ See:
 
 Ghostly is an independent project built upon open-source work from the Signal and Molly projects.
 
-Special thanks to the developers and contributors who make secure and private communication possible.
+We are grateful to the developers and contributors who make secure and private communication possible.
 
-- "Signal" (https://reference-url-citation.invalid/11)
-- "Molly" (https://reference-url-citation.invalid/12)
+- "🔐 Signal" (https://signal.org/)
+- "💻 Signal Android" (https://github.com/signalapp/Signal-Android)
+- "🛡️ Molly" (https://github.com/mollyim/mollyim-android)
+- "👻 Ghostly" (https://github.com/TempleEU/Ghostly.android)
+
+---
+
+⚠️ Disclaimer
+
+Ghostly is an independently developed project and is not affiliated with, sponsored by, or endorsed by Signal Messenger LLC or the Signal Foundation.
+
+Ghostly is provided on an as-is basis. Users should independently evaluate the software, releases and security implications before relying on it for sensitive communications.
 
 ---
 
 👻 Ghostly Android
 
-Private communication. Modern security. Your data.
+Privacy. Security. Freedom.
+
+"⭐ GitHub" (https://github.com/TempleEU/Ghostly.android) · "📥 Releases" (https://github.com/TempleEU/Ghostly.android/releases) · "🐛 Issues" (https://github.com/TempleEU/Ghostly.android/issues) · "🔀 Contribute" (https://github.com/TempleEU/Ghostly.android/pulls)
