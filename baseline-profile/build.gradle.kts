@@ -2,11 +2,11 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
   id("com.android.test")
-  alias(benchmarkLibs.plugins.baselineprofile)
+  id("androidx.baselineprofile")
 }
 
 android {
-  namespace = "org.signal.baselineprofile"
+  namespace = "org.thoughtcrime.securesms.baselineprofile"
   compileSdk {
     version = release(36)
   }
@@ -64,10 +64,10 @@ baselineProfile {
 }
 
 dependencies {
-  implementation(benchmarkLibs.androidx.test.ext.junit)
-  implementation(benchmarkLibs.espresso.core)
-  implementation(benchmarkLibs.uiautomator)
-  implementation(benchmarkLibs.androidx.benchmark.macro)
+  implementation("androidx.test.ext:junit:1.2.1")
+  implementation("androidx.test.espresso:espresso-core:3.7.0")
+  implementation("androidx.test.uiautomator:uiautomator:2.3.0")
+  implementation("androidx.benchmark:benchmark-macro-junit4:1.4.1")
 }
 
 androidComponents {
