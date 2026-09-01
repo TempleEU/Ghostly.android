@@ -1,19 +1,19 @@
 # IMPORTANT: After changing a dependency, please run:
-# ./gradlew --write-verification-metadata sha256 qa --rerun-tasks
+# ./gradlew --write-verification-metadata sha256 build --rerun-tasks
 
 [versions]
 # SDK & Build Versions
-buildTools = "36.0.0"         # MOLLY: Dockerfile must match this version
-compileSdk = "android-36.1"   # MOLLY: Dockerfile must match this version
+buildTools = "36.0.0"
+compileSdk = "android-36.1"
 targetSdk = "35"
 minSdk = "27"
-ndk = "28.0.13004108"         # MOLLY: Dockerfile must match this version
+ndk = "28.0.13004108"
 javaVersion = "21"
 kotlinJvmTarget = "21"
 gradle = "9.2.1"
 kotlin = "2.2.20"
 android-gradle-plugin = "9.2.1"
-androidx-benchmark = "1.4.1"
+androidx-benchmark = "1.5.0-rc01"
 
 # Other versions
 androidx-appcompat = "1.7.1"
@@ -51,7 +51,7 @@ licensee = { id = "app.cash.licensee", version = "1.14.1" }
 gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
 android-library = { module = "com.android.library:com.android.library.gradle.plugin", version.ref = "android-gradle-plugin" }
 android-application = { module = "com.android.application:com.android.application.gradle.plugin", version.ref = "android-gradle-plugin" }
-androidx-benchmark-gradle-plugin = "androidx.benchmark:benchmark-gradle-plugin:1.4.1"
+androidx-benchmark-gradle-plugin = { module = "androidx.benchmark:benchmark-gradle-plugin", version.ref = "androidx-benchmark" }
 
 # Compose
 androidx-compose-bom = "androidx.compose:compose-bom:2026.04.01"
@@ -196,22 +196,6 @@ glide-ksp = { module = "com.github.bumptech.glide:ksp", version.ref = "glide" }
 roundedimageview = "com.makeramen:roundedimageview:2.3.0"
 materialish-progress = "com.pnikosis:materialish-progress:1.7"
 subsampling-scale-image-view = "com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0"
-lottie = "com.airbnb.android:lottie:6.7.1"
-lottie-compose = "com.airbnb.android:lottie-compose:6.7.1"
 dnsjava = "dnsjava:dnsjava:3.6.4"
-nanohttpd-webserver = { module = "org.nanohttpd:nanohttpd-webserver", version.ref = "nanohttpd" }
-nanohttpd-websocket = { module = "org.nanohttpd:nanohttpd-websocket", version.ref = "nanohttpd" }
 kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.4.0"
 arrow-core = "io.arrow-kt:arrow-core:2.2.2.1"
-
-# Can't use the newest version because it hits some weird NoClassDefFoundException
-jknack-handlebars = "com.github.jknack:handlebars:4.0.7"
-
-# Mp4Parser
-mp4parser-isoparser = { module = "org.mp4parser:isoparser", version.ref = "mp4parser" }
-mp4parser-streaming = { module = "org.mp4parser:streaming", version.ref = "mp4parser" }
-mp4parser-muxer = { module = "org.mp4parser:muxer", version.ref = "mp4parser" }
-
-[bundles]
-media3 = ["androidx-media3-exoplayer", "androidx-media3-session", "androidx-media3-ui"]
-mp4parser = ["mp4parser-isoparser", "mp4parser-streaming", "mp4parser-muxer"]
