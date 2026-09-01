@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
   id("com.android.test")
-  alias(libs.plugins.androidx.baselineprofile)
+  id("androidx.baselineprofile") version "1.5.0-rc01"
 }
 
 android {
