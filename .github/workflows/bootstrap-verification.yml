@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21'
 
       - name: Generate missing Gradle verification checksums
         run: ./gradlew --write-verification-metadata sha256 help
