@@ -198,3 +198,20 @@ materialish-progress = "com.pnikosis:materialish-progress:1.7"
 subsampling-scale-image-view = "com.davemorrissey.labs:subsampling-scale-image-view-androidx:3.10.0"
 lottie = "com.airbnb.android:lottie:6.7.1"
 lottie-compose = "com.airbnb.android:lottie-compose:6.7.1"
+dnsjava = "dnsjava:dnsjava:3.6.4"
+nanohttpd-webserver = { module = "org.nanohttpd:nanohttpd-webserver", version.ref = "nanohttpd" }
+nanohttpd-websocket = { module = "org.nanohttpd:nanohttpd-websocket", version.ref = "nanohttpd" }
+kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.4.0"
+arrow-core = "io.arrow-kt:arrow-core:2.2.2.1"
+
+# Can't use the newest version because it hits some weird NoClassDefFoundException
+jknack-handlebars = "com.github.jknack:handlebars:4.0.7"
+
+# Mp4Parser
+mp4parser-isoparser = { module = "org.mp4parser:isoparser", version.ref = "mp4parser" }
+mp4parser-streaming = { module = "org.mp4parser:streaming", version.ref = "mp4parser" }
+mp4parser-muxer = { module = "org.mp4parser:muxer", version.ref = "mp4parser" }
+
+[bundles]
+media3 = ["androidx-media3-exoplayer", "androidx-media3-session", "androidx-media3-ui"]
+mp4parser = ["mp4parser-isoparser", "mp4parser-streaming", "mp4parser-muxer"]
