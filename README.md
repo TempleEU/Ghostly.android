@@ -1,4 +1,4 @@
-👻 Ghostly
+👻 Ghostly - https://github.com/apps/ghostly-app 👻
 
 A privacy-focused and security-hardened fork of Signal for Android.
 
