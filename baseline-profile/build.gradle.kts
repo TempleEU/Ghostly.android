@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-  namespace = "org.thoughtcrime.securesms.baselineprofile"
+  namespace = "org.ghostly.baselineprofile"
   compileSdk {
     version = release(36)
   }
