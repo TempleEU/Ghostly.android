@@ -13,6 +13,7 @@ kotlinJvmTarget = "21"
 gradle = "9.2.1"
 kotlin = "2.2.20"
 android-gradle-plugin = "9.2.1"
+androidx-benchmark = "1.5.0-rc01"
 
 # Other versions
 androidx-appcompat = "1.7.1"
@@ -40,6 +41,7 @@ android-library = { id = "com.android.library", version.ref = "android-gradle-pl
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 androidx-navigation-safe-args = { id = "androidx.navigation.safeargs", version.ref = "navigation-safe-args-gradle-plugin" }
+androidx-baselineprofile = { id = "androidx.baselineprofile", version.ref = "androidx-benchmark" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinx-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 licensee = { id = "app.cash.licensee", version = "1.14.1" }
