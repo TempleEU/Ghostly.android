@@ -1,0 +1,40 @@
+name: Bootstrap Gradle Verification Metadata
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [Ghostly.main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-verification-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Generate missing Gradle verification checksums
+        run: ./gradlew --write-verification-metadata sha256 help
+
+      - name: Commit generated verification metadata
+        if: success()
+        run: |
+          if git diff --quiet -- gradle/verification-metadata.xml; then
+            echo "No verification metadata changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gradle/verification-metadata.xml
+          git commit -m "chore: update Gradle verification metadata"
+          git push
