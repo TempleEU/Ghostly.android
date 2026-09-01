@@ -118,5 +118,6 @@ include(":feature:media-send")
 // Testing/Lint modules
 include(":lintchecks")
 include(":fast-lint")
+include(":baseline-profile")
 
 rootProject.name = "Ghostly"
