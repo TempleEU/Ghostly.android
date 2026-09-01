@@ -1,5 +1,4 @@
-👻 Ghostly - https://github.com/apps/ghostly-app 👻
-
+👻 Ghostly; https://templeeu.github.io/Ghostly.android/ 🛡️
 A privacy-focused and security-hardened fork of Signal for Android.
 
 Ghostly builds on the Signal/Molly technology stack, providing secure end-to-end encrypted messaging with additional privacy, security and customization features.
