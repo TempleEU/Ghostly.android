@@ -1,6 +1,6 @@
 # Reproducible Builds
 
-[![Reproducible build](https://github.com/mollyim/mollyim-android/actions/workflows/reprocheck.yml/badge.svg)](https://github.com/mollyim/mollyim-android/actions/workflows/reprocheck.yml)
+[![Reproducible build](https://github.com/TempleEU/Ghostly.android/actions/workflows/reprocheck.yml/badge.svg)](https://github.com/TempleEU/Ghostly.android/actions/workflows/reprocheck.yml)
 
 Follow these instructions to verify that this source code is exactly the same code that was used to compile the APK distributed on the website.
 
@@ -14,17 +14,17 @@ The [reproducible-builds.org](https://reproducible-builds.org/) project has more
 
 ## Build and Verify
 
-You can compile you own release of Molly inside a Docker container and compare the resulted APK to the APK that is officially distributed. To do so, execute the following:
+You can compile your own release of Ghostly inside a Docker container and compare the resulted APK to the APK that is officially distributed. To do so, execute the following:
 
 ```shell
 # Set the release version you want to check
-export VERSION=v5.42.8-2
+export VERSION=v1.0.0
 
 # Clone the source code repository
-git clone https://github.com/mollyim/mollyim-android.git
+git clone https://github.com/TempleEU/Ghostly.android.git
 
 # Go to this directory
-cd mollyim-android/reproducible-builds
+cd Ghostly.android/reproducible-builds
 
 # Check out the release tag
 git checkout $VERSION
@@ -36,15 +36,15 @@ git checkout $VERSION
 docker compose up --build
 
 # Download the official APK
-wget https://github.com/mollyim/mollyim-android/releases/download/$VERSION/Molly-$VERSION.apk
+wget https://github.com/TempleEU/Ghostly.android/releases/download/$VERSION/Ghostly-$VERSION.apk
 
 # Run the diff script to compare the APKs
-python apkdiff/apkdiff.py Molly-$VERSION.apk outputs/apk/prodWebsite/release/Molly-unsigned-$VERSION.apk
+python apkdiff/apkdiff.py Ghostly-$VERSION.apk outputs/apk/prodWebsite/release/Ghostly-unsigned-$VERSION.apk
 
 # Clean up the Docker environment
 docker compose down
 ```
 
-If you get `APKs match`, you have **successfully verified** that the official release matches with your own self-built version of Molly. Congratulations!
+If you get `APKs match`, you have **successfully verified** that the official release matches with your own self-built version of Ghostly. Congratulations!
 
-If you get `APKs don't match`, please [report the issue](https://github.com/mollyim/mollyim-android/issues).
+If you get `APKs don't match`, please [report the issue](https://github.com/TempleEU/Ghostly.android/issues).
