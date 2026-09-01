@@ -51,14 +51,6 @@ dependencyResolutionManagement {
     mavenCentral()
   }
   versionCatalogs {
-    // The default libs catalog is loaded from gradle/libs.versions.toml.
-    // These entries restore aliases required by the current Ghostly/Molly sources.
-    named("libs") {
-      library("dnsjava", "dnsjava", "dnsjava").version("3.6.4")
-      library("kotlinx-collections-immutable", "org.jetbrains.kotlinx", "kotlinx-collections-immutable").version("0.4.0")
-      library("arrow-core", "io.arrow-kt", "arrow-core").version("2.2.2.1")
-      bundle("media3", listOf("androidx-media3-exoplayer", "androidx-media3-session", "androidx-media3-ui"))
-    }
     create("testLibs") {
       from(files("gradle/test-libs.versions.toml"))
     }
