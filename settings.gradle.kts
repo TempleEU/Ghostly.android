@@ -75,6 +75,9 @@ if (libsignalClientPath is String) {
 // Main app
 include(":app")
 
+// Baseline profile generator
+include(":baseline-profile")
+
 // Core modules
 include(":core:util")
 include(":core:util-jvm")
@@ -118,6 +121,5 @@ include(":feature:media-send")
 // Testing/Lint modules
 include(":lintchecks")
 include(":fast-lint")
-include(":baseline-profile")
 
 rootProject.name = "Ghostly"

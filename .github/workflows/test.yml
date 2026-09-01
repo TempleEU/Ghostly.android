@@ -38,7 +38,7 @@ jobs:
         run: cp gradle.properties.docker "$GRADLE_USER_HOME/gradle.properties"
 
       - name: Build and run tests
-        run: ./gradlew build
+        run: ./gradlew --write-verification-metadata sha256 build
 
       - name: Archive reports for failed build
         if: "failure()"
